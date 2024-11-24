@@ -37,9 +37,9 @@ connectDB();
 // Static Files
 app.use(express.static('public'));
 
-// Routes
-app.use(routes);
+// to get Routes
 
+app.use(routes);
 // View Engine
 app.set('view engine', 'ejs');
 
