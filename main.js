@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import session from 'express-session';
 import passport from 'passport';
 import connectDB from './connectDB/connectDB.js';
-
 import routes from './routes/routes.js';
 
 const app = express();
@@ -26,6 +25,9 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
+
+
 
 
 
